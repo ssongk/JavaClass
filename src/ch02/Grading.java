@@ -19,7 +19,7 @@ public class Grading {
         else 
             grade = 'F';
 
-        System.out.println("힉잠은 "+grade+"입니다.");
+        System.out.println("힉점은 "+grade+"입니다.");
 
         switch(grade){
             case 'A':
