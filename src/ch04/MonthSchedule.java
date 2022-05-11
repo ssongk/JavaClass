@@ -19,9 +19,11 @@ class Day{
 }
 
 public class MonthSchedule{
+    private int n;
     private Scanner s;
     private Day d[];
     public MonthSchedule(int n){
+        this.n=n;
         d = new Day[n];
         for(int k=0; k<n; k++){
             s = new Scanner(System.in);
@@ -31,6 +33,10 @@ public class MonthSchedule{
     void input(){
         System.out.print("날짜(1~30)? ");
         int day = s.nextInt();
+        if(day<0 || day>n){
+            System.out.println("잘 못 입력했습니다.");
+            return;
+        }
         System.out.print("할 일(빈 칸 없이 입력)? ");
         String work = s.next();
         d[day-1].set(work);
@@ -39,6 +45,10 @@ public class MonthSchedule{
     void view(){
         System.out.print("날짜(1~30)? ");
         int day = s.nextInt();
+        if(day<0 || day>n){
+            System.out.println("잘 못 입력했습니다.");
+            return;
+        }
         System.out.print(day+"일에 할 일은 ");
         d[day-1].show();
         System.out.println();
