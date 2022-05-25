@@ -7,7 +7,7 @@ public class MyPoint {
         this.y=y;
     }
     public String toString(){
-        return getClass().getName()+"("+x+","+y+")";
+        return getClass().getSimpleName()+"("+x+","+y+")";
     }
     public static void main(String[] args) {
         MyPoint a = new MyPoint(3,20);

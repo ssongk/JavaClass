@@ -1,8 +1,5 @@
 package ch06.example;
 
-import javax.management.relation.InvalidRelationIdException;
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 public class WrapperEx {
     public static void main(String[] args) {
         // Character 사용
