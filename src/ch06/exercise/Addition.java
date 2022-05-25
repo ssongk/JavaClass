@@ -9,7 +9,7 @@ public class Addition {
         String line = s.nextLine();
         StringTokenizer st = new StringTokenizer(line,"+");
         int sum = 0;
-        while(st.hasMoreTokens()==true){
+        while(st.hasMoreTokens()){
             sum += Integer.parseInt(st.nextToken().trim());
         }
         System.out.println("합은"+sum);
