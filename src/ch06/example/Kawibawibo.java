@@ -17,7 +17,7 @@ public class Kawibawibo {
                 System.out.println("잘 못 입력하셨습니다.");
                 continue;
             }
-            System.out.println("사용자 "+ss[userChoice-1]+userChoice+" : 컴퓨터 "+ss[computerChoice-1]+computerChoice);
+            System.out.println("사용자 "+ss[userChoice-1]+" : 컴퓨터 "+ss[computerChoice-1]);
             int diff = userChoice - computerChoice;
             switch(diff){
                 case 0:
