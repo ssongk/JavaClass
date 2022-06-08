@@ -3,10 +3,11 @@ package ch05;
 import java.util.Scanner;
 
 abstract class Calculator{
+    Scanner scanner;
     protected int a, b;
     abstract protected int calc();
     protected void input(){
-        Scanner scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.print("정수 2개를 입력하세요>>");
         a = scanner.nextInt();
         b = scanner.nextInt();

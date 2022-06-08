@@ -15,5 +15,6 @@ public class StackManager {
         for(int i=0; i<5; i++){
         System.out.print(stack.pop()+"\t");
         }
+        s.close();
     }   
 }
