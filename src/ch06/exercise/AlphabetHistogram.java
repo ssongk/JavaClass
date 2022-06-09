@@ -17,6 +17,7 @@ public class AlphabetHistogram {
                 break;
             sb.append(line);
         }
+        scanner.close();
         return sb.toString();
     }
     private void makeHistogram(String s){
@@ -30,12 +31,13 @@ public class AlphabetHistogram {
         }
     }
     private void drawHistogram(){
-        System.out.println("히스토그램을 그립니다.");
+        System.out.println("\n히스토그램을 그립니다.");
         for(int i=0;i<histoData.length;i++){
             System.out.print((char)('A'+i));
-            System.out.print(("("+histoData[i]+")"));
-            for(int j=0;i<histoData[i];j++)
+            System.out.print(("("+histoData[i]+")\t"));
+            for(int j=0;j<histoData[i];j++){
                 System.out.print('-');
+            }
             System.out.println();
         }
         
