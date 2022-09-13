@@ -19,12 +19,13 @@ public class GridLayoutEx extends JFrame{
 
         for(int i=0;i<10;i++){
             JButton button = new JButton(Integer.toString(i));
-            // button.setOpaque(true);
+            button.setBorderPainted(false);
+            button.setOpaque(true);
             button.setBackground(color[i]);
             contentPane.add(button);
         }
 
-        setSize(500,200);
+        setSize(1000,400);
         setVisible(true);
     }
 
