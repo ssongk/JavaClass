@@ -37,7 +37,7 @@ class Panel3 extends JPanel{
         setBackground(Color.LIGHT_GRAY);
         // setLayout(new FlowLayout());
         add(new JButton("별 개수 수정"));
-        add(new JTextField("",20));
+        add(new JTextField(20));
     }
 }
 
