@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 class Panel1 extends JPanel{
-    Panel1(){
+    public Panel1(){
         setBackground(Color.YELLOW);
         // setLayout(new FlowLayout());
         add(new JButton("새로 배치"));
@@ -17,9 +17,12 @@ class Panel1 extends JPanel{
 }
 
 class Panel2 extends JPanel{
-    Panel2(){
+    public Panel2(){
         setBackground(Color.WHITE);
         setLayout(null);
+        draw();
+    }
+    public void draw(){
         for(int i=0;i<10;i++){
             JLabel l = new JLabel("*");
             int x = (int)(Math.random()*200);
@@ -33,7 +36,7 @@ class Panel2 extends JPanel{
 }
 
 class Panel3 extends JPanel{
-    Panel3(){
+    public Panel3(){
         setBackground(Color.LIGHT_GRAY);
         // setLayout(new FlowLayout());
         add(new JButton("별 개수 수정"));

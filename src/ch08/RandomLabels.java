@@ -18,6 +18,8 @@ public class RandomLabels extends JFrame{
             int y = (int)(Math.random()*220)+30;
             label.setLocation(x,y);
             label.setSize(20,20);
+            label.setBackground(Color.BLUE);
+            label.setOpaque(true);
             label.setForeground(Color.MAGENTA);
             c.add(label);
         }
