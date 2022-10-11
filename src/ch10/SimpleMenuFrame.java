@@ -2,16 +2,16 @@ package ch10;
 
 import javax.swing.*;
 
-public class MenuPractice extends JFrame{
-    public MenuPractice(){
+public class SimpleMenuFrame extends JFrame{
+    public SimpleMenuFrame(){
         setTitle("메뉴 만들기");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         createMenu();
-        setSize(250,200);
+        setSize(300,150);
         setVisible(true);
     }
 
-    public void createMenu(){
+    private void createMenu(){
         JMenuBar mb = new JMenuBar();
         mb.add(new JMenu("파일"));
         mb.add(new JMenu("편집"));
@@ -25,6 +25,6 @@ public class MenuPractice extends JFrame{
     }
 
     public static void main(String[] args) {
-        new MenuPractice();
+        new SimpleMenuFrame();
     }
 }

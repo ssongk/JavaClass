@@ -4,10 +4,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class RadioButtonPractice extends JFrame{
+public class TwoRadioFrame extends JFrame{
     private JRadioButton[] rb = new JRadioButton[2];
     private String[] str = {"Red","Blue"};
-    public RadioButtonPractice(){
+    public TwoRadioFrame(){
         setTitle("Two Radio Button");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -34,6 +34,6 @@ public class RadioButtonPractice extends JFrame{
     }
 
     public static void main(String[] args) {
-        new RadioButtonPractice();
+        new TwoRadioFrame();
     }
 }
