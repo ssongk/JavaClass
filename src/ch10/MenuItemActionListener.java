@@ -32,8 +32,7 @@ public class MenuItemActionListener extends JFrame{
                     return;
                 }
                 String fileName = JOptionPane.showInputDialog(MenuItemActionListener.this,"저장할 파일명을 입력하세요");
-                System.out.println(fileName);
-                if(fileName.equals("")){
+                if(fileName==null || fileName.equals("")){
                     JOptionPane.showMessageDialog(MenuItemActionListener.this, "파일을 저장하지 않습니다.", "Warning", JOptionPane.WARNING_MESSAGE);
                     return;
                 }

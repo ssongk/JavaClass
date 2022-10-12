@@ -32,6 +32,8 @@ public class OptionPaneEx extends JFrame{
                     String name =JOptionPane.showInputDialog("이름을 입력하세요");
                     if(name!=null)
                         tf.setText(name);
+                    else
+                        tf.setText("no!");
                 }
             });
 
