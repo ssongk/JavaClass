@@ -37,7 +37,7 @@ public class MouseEventAllEx extends JFrame{
         }
         public void mouseReleased(MouseEvent e){
             la.setLocation(e.getX(),e.getY());
-            setTitle("mousePressed("+e.getX()+","+e.getY()+")");
+            setTitle("mouseReleased("+e.getX()+","+e.getY()+")");
         }
         public void mouseClicked(MouseEvent e){}
         public void mouseEntered(MouseEvent e){
@@ -51,11 +51,11 @@ public class MouseEventAllEx extends JFrame{
         }
         public void mouseDragged(MouseEvent e){
             la.setLocation(e.getX(),e.getY());
-            setTitle("mousePressed("+e.getX()+","+e.getY()+")");
+            setTitle("mouseDragged("+e.getX()+","+e.getY()+")");
         }
         public void mouseMoved(MouseEvent e){
             la.setLocation(e.getX(),e.getY());
-            setTitle("mousePressed("+e.getX()+","+e.getY()+")");
+            setTitle("mouseMoved("+e.getX()+","+e.getY()+")");
         }
     }
 

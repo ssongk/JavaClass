@@ -17,25 +17,22 @@ public class KeyPlusMinusFrame extends JFrame{
         c.setLayout(new FlowLayout());
         la.setFont(new Font("Arial",Font.PLAIN,10));
         c.add(la);
+        c.setFocusable(true);
+        c.requestFocus();
 
         setSize(250,150);
         setVisible(true);
-
-        c.setFocusable(true);
-        c.requestFocus();
     }
 
     class MyKeyListener extends KeyAdapter{
         public void keyPressed(KeyEvent e){
             if(e.getKeyChar()=='-'){
-                Font f = la.getFont();
-                int size = f.getSize();
+                int size = la.getFont().getSize();
                 if(size<=5) return;
                 la.setFont(new Font("Arial",Font.PLAIN,size-5));
             }
             else if(e.getKeyChar()=='+'){
-                Font f = la.getFont();
-                int size = f.getSize();
+                int size = la.getFont().getSize();
                 la.setFont(new Font("Arial",Font.PLAIN,size+5));
             }
         }

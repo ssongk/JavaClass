@@ -20,6 +20,7 @@ public class CheckBoxItemEventEx extends JFrame{
         c.add(new JLabel("사과 100원, 배 500원, 체리 20000원"));
 
         MyItemListener listener = new MyItemListener();
+        // 같은 이벤트 객체를 참조해야 한다.
         for(int i=0;i<fruits.length;i++){
             fruits[i] = new JCheckBox(names[i]);
             fruits[i].setBorderPainted(true);

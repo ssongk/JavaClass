@@ -12,12 +12,11 @@ public class KeyEventFrame extends JFrame{
         Container c = getContentPane();
         c.setBackground(Color.RED);
         c.addKeyListener(new MyKeyListener());
+        c.setFocusable(true);
+        c.requestFocus();
 
         setSize(250,150);
         setVisible(true);
-        
-        c.setFocusable(true);
-        c.requestFocus();
     }
 
     class MyKeyListener extends KeyAdapter{
