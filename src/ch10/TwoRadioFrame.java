@@ -5,8 +5,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class TwoRadioFrame extends JFrame{
-    private JRadioButton[] rb = new JRadioButton[2];
-    private String[] str = {"Red","Blue"};
+    private JRadioButton red = new JRadioButton("Red");
+    private JRadioButton blue = new JRadioButton("Blue");
     public TwoRadioFrame(){
         setTitle("Two Radio Button");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -14,23 +14,26 @@ public class TwoRadioFrame extends JFrame{
         Container c = getContentPane();
         c.setLayout(new FlowLayout());
         ButtonGroup group = new ButtonGroup();
-        for(int i=0;i<rb.length;i++){
-            rb[i] = new JRadioButton(str[i]);
-            rb[i].addActionListener(new ActionListener(){
-                public void actionPerformed(ActionEvent e){
-                    String name = e.getActionCommand();
-                    if(name.equals("Red"))
-                        c.setBackground(Color.RED);
-                    else if(name.equals("Blue"))
-                        c.setBackground(Color.BLUE);
-                }
-            });
-            group.add(rb[i]);
-            c.add(rb[i]);
-        }
+        group.add(red);
+        group.add(blue);
+        c.add(red);
+        c.add(blue);
+    
+        MyItemListener listener = new MyItemListener();
+        red.addActionListener(listener);
+        blue.addActionListener(listener);
 
         setSize(300,200);
         setVisible(true);
+    }
+    class MyItemListener implements ActionListener{
+        public void actionPerformed(ActionEvent e){
+            String name = e.getActionCommand();
+            if(name.equals("Red"))
+                getContentPane().setBackground(Color.RED);
+            else if(name.equals("Blue"))
+                getContentPane().setBackground(Color.BLUE);
+        }
     }
 
     public static void main(String[] args) {
