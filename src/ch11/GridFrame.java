@@ -20,7 +20,7 @@ public class GridFrame extends JFrame{
 
             for(int i=1;i<10;i++){
                 g.drawLine(dw*i, 0, dw*i, getHeight());
-                g.drawLine(0, getWidth(), dw*10, dh*i);
+                g.drawLine(0, dh*i, getWidth(), dh*i);
             }
         }
     }
