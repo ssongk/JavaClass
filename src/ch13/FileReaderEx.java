@@ -7,7 +7,7 @@ public class FileReaderEx {
     public static void main(String[] args) {
         FileReader in = null;
         try{
-            in = new FileReader("/Users/ssongk/Downloads/mp.py");
+            in = new FileReader("src/ch13/sample.txt");
             int c;
             while((c=in.read()) != -1){
                 System.out.print((char)c);

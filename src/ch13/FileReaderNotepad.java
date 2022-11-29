@@ -7,7 +7,7 @@ public class FileReaderNotepad {
     public static void main(String[] args) {
         FileReader fr = null;
         try {
-            fr = new FileReader("/Users/ssongk/Downloads/sample.txt");
+            fr = new FileReader("src/ch13/sample.txt");
             int c;
 
             while((c=fr.read()) != -1){
