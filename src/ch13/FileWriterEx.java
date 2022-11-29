@@ -12,7 +12,7 @@ public class FileWriterEx {
         int c;
 
         try {
-            fout = new FileWriter("/Users/ssongk/Downloads/flag.txt");
+            fout = new FileWriter("src/ch13/flag.txt");
             while((c=in.read()) != -1){
                 fout.write(c);
             }
